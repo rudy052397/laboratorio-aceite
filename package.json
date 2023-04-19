@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/rudy052397/laboratorio-aceite",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
