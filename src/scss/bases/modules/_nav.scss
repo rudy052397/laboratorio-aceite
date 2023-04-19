@@ -1,0 +1,27 @@
+.nav {
+  --padding-nav: 0.625rem 0rem;
+
+
+  @include bp1200 {
+    --padding-nav: 1rem 0rem;
+  }
+
+  padding: var(--padding-nav);
+
+  &__logo {
+    height: 59px;
+    width: auto;
+    justify-self: center;
+
+    @include bp1200 {
+      height: 70px;
+    }
+  }
+
+  &--footer {
+    position: relative;
+    z-index: 10;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+}

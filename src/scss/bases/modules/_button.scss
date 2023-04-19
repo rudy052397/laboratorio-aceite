@@ -1,0 +1,20 @@
+.button {
+  background-color: var(--primary-theme-color);
+  color: #fff;
+  text-decoration: none;
+  border: 0.125rem solid var(--primary-theme-color);
+  border-radius: 8px;
+  font-size: 1.125rem;
+  padding: 0.3rem 0.8rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+
+  &:hover {
+    // background-color: var(--secondary-theme-color);
+    scale: 1.1;
+  }
+
+  &--hero {
+    padding: 0.4rem 1.6rem;
+  }
+}

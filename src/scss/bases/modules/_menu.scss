@@ -1,0 +1,151 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000000e8;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+
+  &--open {
+    // transform: translateY(0);
+    height: 100vh;
+  }
+
+  @include bp992 {
+    position: initial;
+    flex-direction: row;
+    justify-self: right;
+    gap: 1.125rem;
+    transform: initial;
+    text-shadow: 0px 0px 3px #fff;
+    background-color: transparent;
+    z-index: initial;
+    height: auto;
+    overflow: initial;
+
+  }
+
+  @include bp1200 {
+    gap: 3rem;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    position: relative;
+    padding: 0.7rem;
+
+    @include bp992 {
+      font-size: 1rem;
+    }
+
+    @include bp1200 {
+      font-size: 1.125rem;
+    }
+
+    &:hover {
+      color: var(--primary-theme-color);
+      text-shadow: none;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      height: 14px;
+      width: 14px;
+      position: absolute;
+      transition: all .35s ease;
+      opacity: 0;
+    }
+
+    &::before {
+      content: '';
+      right: 0;
+      top: 0;
+      border-top: 3px solid var(--primary-theme-color);
+      border-right: 3px solid var(--primary-theme-color);
+      transform: translate(-100%, 50%);
+    }
+
+    &:after {
+      content: '';
+      left: 0;
+      bottom: 0;
+      border-bottom: 3px solid var(--primary-theme-color);
+      border-left: 3px solid var(--primary-theme-color);
+      transform: translate(100%, -50%)
+    }
+
+    &:hover:before,
+    &:hover:after {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    height: 19px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    --iconline-bgcolor: #fff;
+    --iconline-before-transform: initial;
+    --iconline-after-transform: initial;
+
+    &--open {
+      --iconline-bgcolor: #000;
+      --iconline-before-transform: rotate(45deg) translateY(-1.8px) scale(1.1, 1);
+      --iconline-after-transform: rotate(-45deg) translateY(1.8px) scale(1.1, 1);
+
+    }
+
+    &-line {
+      background-color: #fff;
+      position: relative;
+      height: 3px;
+      width: 25px;
+      background-color: var(--iconline-bgcolor);
+      transition: background-color 0.25s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        height: 3px;
+        width: 25px;
+        top: -8px;
+        transform-origin: top left;
+        transform: var(--iconline-before-transform);
+        transition: transform 0.25s ease-out;
+      }
+
+      &::after {
+        content: '';
+        // display: block;
+        position: absolute;
+        background-color: #fff;
+        height: 3px;
+        width: 25px;
+        bottom: -8px;
+        transform-origin: bottom left;
+        transform: var(--iconline-after-transform);
+        transition: transform 0.25s ease-out;
+      }
+
+    }
+
+  }
+}

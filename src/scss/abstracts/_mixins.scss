@@ -1,0 +1,41 @@
+@mixin bp576 {
+  @media (min-width:576px) {
+    @content;
+  }
+}
+
+@mixin bp768 {
+  @media (min-width:768px) {
+    @content;
+  }
+}
+
+@mixin bp992 {
+  @media (min-width:992px) {
+    @content;
+  }
+}
+
+@mixin bp1200 {
+  @media (min-width:1200px) {
+    @content;
+  }
+}
+
+@mixin bp1920 {
+  @media (min-width:1920px) {
+    @content;
+  }
+}
+
+@mixin bpv576 {
+  @media (min-height:576px) {
+    @content;
+  }
+}
+
+@mixin bpv1080 {
+  @media (min-height:1080px) {
+    @content;
+  }
+}

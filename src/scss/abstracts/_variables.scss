@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+@font-face {
+  font-family: "Copperplate";
+  src: url(../../../src/fonts/Copperplate-Gothic-Bold-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Copperplate std";
+  src: url(../../../src/fonts/Copperplate-Gothic-Std-32-BC.ttf) format('truetype');
+}
+
+:root {
+  scroll-behavior: smooth;
+  --primary-font-family: 'Lato', sans-serif;
+  --secondary-font-family: 'Roboto Condensed', sans-serif;
+  --tertiary-font-family: 'Montserrat', sans-serif;
+  --quaternary-font-family: "Copperplate std";
+  --primary-shadow-color: #00000052;
+  --max-width-container: 1400px;
+  --primary-theme-color: #FF4000;
+
+
+}

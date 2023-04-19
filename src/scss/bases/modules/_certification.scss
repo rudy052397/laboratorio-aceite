@@ -1,0 +1,51 @@
+.certification {
+  &__title {
+    font-family: var(--quaternary-font-family);
+    font-weight: 600;
+    font-size: 1.8rem;
+    position: relative;
+    color: #373737;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -65px;
+      width: 60px;
+      height: 2px;
+      background-color: var(--primary-theme-color);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -65px;
+      width: 60px;
+      height: 2px;
+      background-color: var(--primary-theme-color);
+    }
+  }
+
+  &__description {
+    max-width: 600px;
+    text-align: center;
+    color: #373737;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 1.15rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+  }
+
+  &__image {
+    height: 150px;
+  }
+}
