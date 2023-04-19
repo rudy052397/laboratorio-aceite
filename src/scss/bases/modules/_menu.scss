@@ -19,7 +19,6 @@
   transition: height 0.3s ease-out;
 
   &--open {
-    // transform: translateY(0);
     height: 100vh;
   }
 
@@ -134,7 +133,6 @@
 
       &::after {
         content: '';
-        // display: block;
         position: absolute;
         background-color: #fff;
         height: 3px;

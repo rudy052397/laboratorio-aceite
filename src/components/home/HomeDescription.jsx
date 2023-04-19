@@ -1,10 +1,6 @@
 import oil from '../../assets/images/oil.png'
-// import useMediaQuery from '../../hooks/useMediaQuery'
-
 
 const HomeDescription = () => {
-
-  // const mediaQuery = useMediaQuery('(min-width:768px)')
 
   return (
     <section className='description' id='description'>

@@ -1,6 +1,6 @@
 .hero {
   height: 600px;
-  background-image: url(../../../../src/assets/images/background2.webp);
+  background-image: url('/src/assets/images/background2.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -82,7 +82,6 @@
 
   &__title,
   &__description {
-    // font-family: var(--secondary-font-family);
     margin: 0;
     line-height: 1;
     text-shadow: 0px 0px 10px #fff;
@@ -111,6 +110,5 @@
       text-align: start;
     }
 
-    // text-shadow: 0px 0px 5px #fff;
   }
 }

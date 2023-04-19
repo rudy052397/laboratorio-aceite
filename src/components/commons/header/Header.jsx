@@ -2,7 +2,6 @@ import logo from '../../../assets/svg/logo.svg'
 import logoMini from '../../../assets/svg/logo-mini.svg'
 import useMediaQuery from '../../../hooks/useMediaQuery'
 import Menu from './Menu'
-// import { ReactComponent as MenuIcon } from '../../../assets/svg/menu-icon.svg'
 import { useState } from 'react'
 
 const Header = () => {
